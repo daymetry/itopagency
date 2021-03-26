@@ -1,0 +1,26 @@
+<div class="content" role="main">
+  <div class="row flex-center">
+    <mat-card class="mat-card mat-focus-indicator example-card w-290">
+      <mat-card-header class="flex-center">
+          <mat-card-title>
+            <img
+              width="40"
+              alt="Angular Logo"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+            />
+            <span>{{title}}</span>
+          </mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="flex-center">
+        <p>{{TimeView$}}</p>
+      </mat-card-content>
+      <mat-card-actions class="flex-center">
+        <button (click)="start()" class="btn btn-outline-primary">Start / Stop</button>
+        <button (click)="wait()" class="btn btn-outline-primary">Wait</button>
+        <button (click)="reset()" class="btn btn-outline-primary">Reset</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
