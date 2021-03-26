@@ -10,7 +10,6 @@ import {interval} from "rxjs";
 export class AppComponent {
 
   public subject: any;
-  public title: string = 'Dmytro Serdiuk';
   public format: string = 'HH:mm:ss';
   public lastClickW = false;
   public timeIsRun = false;
